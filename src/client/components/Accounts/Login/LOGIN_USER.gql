@@ -1,0 +1,8 @@
+query login {
+  loginWithPassword($username: String!, $password: String!) {
+    user {
+      _id
+    }
+    status
+  }
+}

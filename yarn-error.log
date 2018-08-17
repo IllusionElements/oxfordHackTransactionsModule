@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add eslint-plugin-flowtypes
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add global flow-binyarn add global flow-bin
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Aaron\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\HashiCorp\Vagrant\bin;C:\Users\Aaron\AppData\Local\Microsoft\WindowsApps;C:\Users\Aaron\AppData\Roaming\npm;C:\Users\Aaron\AppData\Local\.meteor;C:\Users\Aaron\AppData\Local\GitHubCLI\bin;C:\Users\Aaron\AppData\Local\Yarn\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/eslint-plugin-flowtypes: Not found
+  Error: https://registry.yarnpkg.com/flow-binyarn: Not found
       at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:64202:18)
       at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:137468:22)
       at Request.emit (events.js:182:13)
@@ -53,6 +53,7 @@ npm manifest:
       "bcrypt": "^3.0.0",
       "eslint-import-resolver-meteor": "^0.4.0",
       "eslint-plugin-babel": "^5.1.0",
+      "eslint-plugin-flowtype": "^2.50.0",
       "graphql": "^0.13.2",
       "graphql-load": "^0.1.1",
       "graphql-subscriptions": "^0.5.8",
@@ -1370,6 +1371,12 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/eslint-plugin-babel/-/eslint-plugin-babel-5.1.0.tgz#9c76e476162041e50b6ba69aa4eae3bdd6a4e1c3"
     dependencies:
       eslint-rule-composer "^0.3.0"
+  
+  eslint-plugin-flowtype@^2.50.0:
+    version "2.50.0"
+    resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-2.50.0.tgz#953e262fa9b5d0fa76e178604892cf60dfb916da"
+    dependencies:
+      lodash "^4.17.10"
   
   eslint-plugin-import@^2.14.0:
     version "2.14.0"

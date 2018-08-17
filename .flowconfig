@@ -9,6 +9,7 @@
 .*/.meteor/packages/.*
 .*./meteor/.*
 .*/*.json
+./src/client/Authentication/loginQuery.js
 # This package can give you a lot of flow errors, better ignore it
 .*/node_modules/fbjs/.*
 
@@ -24,7 +25,7 @@
   esproposal.export_star_as=enable
   esproposal.optional_chaining=enable
   experimental.const_params=true
-
+  module.ignore_non_literal_requires=true
   # Absolute path support:
   # e.g. "/collections/todos"
   module.name_mapper='^\/\(.*\)$' -> '<PROJECT_ROOT>/\1'
