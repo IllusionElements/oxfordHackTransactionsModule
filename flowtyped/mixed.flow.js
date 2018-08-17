@@ -1,0 +1,1 @@
+export type Mixed = (...args: any[]) => mixed

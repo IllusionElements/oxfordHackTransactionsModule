@@ -1,0 +1,23 @@
+# @format
+
+parser: 'babel-eslint'
+extends: 'airbnb'
+plugins: ['flowtype']
+rules:
+  semi: 0
+  import/no-absolute-path: 0
+parserOptions:
+  allowImportExportEverywhere: true
+settings:
+  import/resolver:
+    meteor:
+      extensions:
+        # if unset, default is just '.js', but it must be re-added explicitly if set
+        - .js
+        - .jsx
+        - .es6
+        - .coffee
+
+      # this is technically for identifying `node_modules` alternate names
+      moduleDirectory:
+        - node_modules # defaults to 'node_modules', but...

@@ -1,0 +1,55 @@
+{
+  "name": "transactions",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "eslint": ""
+  },
+  "meteor": {
+    "server": "./server/main.js",
+    "client": "./client/main.js"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.1",
+    "@babel/runtime": "7.0.0-beta.55",
+    "apollo-cache-inmemory": "^1.2.7",
+    "apollo-client": "^2.3.8",
+    "apollo-link": "^1.2.2",
+    "apollo-link-http": "^1.5.4",
+    "apollo-link-ws": "^1.0.8",
+    "apollo-live-client": "^0.2.0",
+    "apollo-live-server": "^0.2.0",
+    "apollo-morpher": "^0.1.2",
+    "apollo-server-express": "^2.0.2",
+    "bcrypt": "^3.0.0",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "graphql": "^0.13.2",
+    "graphql-load": "^0.1.1",
+    "graphql-subscriptions": "^0.5.8",
+    "graphql-tag": "^2.9.2",
+    "graphql-tools": "^3.1.1",
+    "graphql-type-json": "^0.2.1",
+    "meteor-node-stubs": "^0.4.1",
+    "prettier-eslint": "^8.8.2",
+    "react": "^16.4.2",
+    "react-apollo": "^2.1.11",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "simpl-schema": "^1.5.3",
+    "subscriptions-transport-ws": "^0.9.14",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.0.0-rc.1",
+    "babel-eslint": "^8.2.6",
+    "eslint": "5.3.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.0"
+  }
+}

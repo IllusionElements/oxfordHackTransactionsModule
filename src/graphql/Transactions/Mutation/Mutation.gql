@@ -1,0 +1,13 @@
+input TransactionInput {
+  type: String
+  experience: Int
+  store: String
+  amount: Float
+}
+
+type Mutation {
+  addTransaction(transaction: TransactionInput!): ID
+  removeTransaction(id: ID!): Boolean
+  updateTransaction(input: TransactionInput): ID
+  changeTransactionType(type: String!): ID
+}

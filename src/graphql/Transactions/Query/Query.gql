@@ -1,0 +1,5 @@
+type Query {
+  transaction(id: ID): Transaction
+  allTransactions: [Transaction]
+  transactionAmount(amount: Float): [Transaction]
+}

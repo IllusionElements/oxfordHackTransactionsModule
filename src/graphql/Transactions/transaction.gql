@@ -1,0 +1,7 @@
+type Transaction implements Node  @mongo(name:"transactions") {
+  _id: ID!
+  type: String!
+  experience: Int!
+  store: String!
+  amount: Float!
+}
