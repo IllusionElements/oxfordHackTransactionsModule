@@ -1,11 +1,13 @@
 # @format
 
 parser: 'babel-eslint'
-extends: 'airbnb'
-plugins: ['flowtype']
+extends: ['airbnb', 'prettier']
+plugins: ['flowtype', 'prettier']
 rules:
   semi: 0
   import/no-absolute-path: 0
+  import/prefer-default-export: 0
+  react/prop-types: 0
 parserOptions:
   allowImportExportEverywhere: true
 settings:

@@ -2,7 +2,7 @@
   "name": "transactions",
   "private": true,
   "scripts": {
-    "start": "meteor run",
+    "start": "MONGO_URL=mongodb://elements:pepsicola20@ds147118.mlab.com:47118/novadev meteor run",
     "eslint": ""
   },
   "meteor": {
@@ -10,8 +10,9 @@
     "client": "./client/main.js"
   },
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.1",
     "@babel/runtime": "7.0.0-beta.55",
+    "@material-ui/core": "^1.5.1",
+    "@types/react-router-dom": "^4.3.0",
     "apollo-cache-inmemory": "^1.2.7",
     "apollo-client": "^2.3.8",
     "apollo-link": "^1.2.2",
@@ -22,10 +23,7 @@
     "apollo-morpher": "^0.1.2",
     "apollo-server-express": "^2.0.2",
     "bcrypt": "^3.0.0",
-    "eslint-import-resolver-meteor": "^0.4.0",
-    "eslint-plugin-babel": "^5.1.0",
-    "eslint-plugin-flowtype": "^2.50.0",
-    "flow-bin": "^0.79.0",
+    "flow": "^0.2.3",
     "global": "^4.3.2",
     "graphql": "^0.13.2",
     "graphql-load": "^0.1.1",
@@ -33,6 +31,8 @@
     "graphql-tag": "^2.9.2",
     "graphql-tools": "^3.1.1",
     "graphql-type-json": "^0.2.1",
+    "immutable": "^3.8.2",
+    "immutable-js": "^0.3.1-6",
     "meteor-apollo-accounts": "^2.0.3",
     "meteor-node-stubs": "^0.4.1",
     "prettier-eslint": "^8.8.2",
@@ -47,12 +47,21 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.1",
     "@babel/plugin-proposal-decorators": "^7.0.0-rc.1",
+    "@types/react": "^16.4.11",
     "babel-eslint": "^8.2.6",
     "eslint": "5.3.0",
     "eslint-config-airbnb": "17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.1",
-    "eslint-plugin-react": "7.11.0"
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "7.11.0",
+    "flow-bin": "^0.79.1",
+    "tslib": "^1.9.3"
   }
 }

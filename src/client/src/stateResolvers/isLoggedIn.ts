@@ -19,6 +19,7 @@ export const UPDATE_LOGIN_STATUS = gql`
     updateLoginStatus($isLoggedIn: $isLoggedIn) @client
   }
 `
+
 export const QUERY_LOGIN_STATUS = gql`
   query LoginStatus {
     loginStatus {

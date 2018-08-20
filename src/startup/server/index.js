@@ -26,5 +26,7 @@ load(
 		...logins
 	})
 )
+
 load(TransactionResolver)
-load(UserResolver)
+const { Query, ...rest } = UserResolver
+load({ ...rest, Query: { ...Query } })

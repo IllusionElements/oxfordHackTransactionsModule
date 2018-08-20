@@ -11,12 +11,12 @@
 .*/*.json
 ./src/client/Authentication/loginQuery.js
 # This package can give you a lot of flow errors, better ignore it
-.*/node_modules/fbjs/.*
+.*/node_modules/.*
 
 [include]
 
 [libs]
-
+./flowtyped
 [lints]
 
 [options]
