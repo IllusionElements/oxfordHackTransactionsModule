@@ -1,0 +1,16 @@
+type SquadMetadata {
+  max: Int
+  size: Int
+  locked: boolean
+  recruits: [Recruits]
+}
+
+type Squad implements Node {
+  _id: ID! @rename(to: "id")
+  name: String
+  division: Division!
+  members: [Member!]!
+  info: SquadMetadata
+  general: Member!
+  ranks: [RANKS_ENLISTED]
+}

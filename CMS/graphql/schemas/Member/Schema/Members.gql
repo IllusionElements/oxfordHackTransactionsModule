@@ -1,0 +1,9 @@
+interface Rank {
+  name: Ranks
+  abbr: RankAbbreviations
+}
+
+type Member implements Node {
+  gamertag: String!
+  rank: Ranks
+}
