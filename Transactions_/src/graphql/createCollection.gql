@@ -1,0 +1,13 @@
+# @format
+
+type Query {
+  getCollection(name: String!): String
+  queryDocument(collection: String!, fields: [String]!): String
+  advancedQuery(collection: String!, query: String!): String
+  getDocumentById(collection: String!, _id: ID!): Collection
+}
+
+type Mutation {
+  createCollection(name: String!): Boolean
+  insertDocument(name: String!, query: String): ID!
+}

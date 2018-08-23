@@ -1,0 +1,13 @@
+# @format
+
+query mongoGet($name: String!) {
+  queryDocument(collection: $name) {
+    name
+    documents {
+      _id
+      fieldList
+      data
+    }
+    documentCount
+  }
+}

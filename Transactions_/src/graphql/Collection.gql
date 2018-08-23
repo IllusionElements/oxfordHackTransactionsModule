@@ -1,0 +1,13 @@
+# @format
+
+type Document {
+  _id: ID!
+  fieldList: [String]!
+  data: String!
+}
+
+type Collection {
+  name: String!
+  documents: [Document]!
+  documentCount: Int!
+}
